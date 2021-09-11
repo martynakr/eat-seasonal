@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font: 16px/1.6 "DM Sans", sans-serif;
+}
+
+.main-button {
+	padding: 15px 30px;
+	font-size: 16px;
+	color: white;
+	font-weight: bold;
+	border: 2px solid white;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.main-button:hover {
+	background-color: #f78118;
+	border: 2px solid #f78118;
+}
+
+h1 {
+	font-family: "Bebas Neue", cursive;
+	font-size: 102px;
+	letter-spacing: 0.04em;
+	line-height: 1;
+}
+
+h3 {
+	font-family: "Bebas Neue", cursive;
+	font-size: 36px;
+	letter-spacing: 0.04em;
+	text-align: center;
+	margin: 40px 0;
+	color: #83bc10;
+}
+/* Global */
+.container {
+	width: 80%; /* Using % not px so it's responsive */
+	margin: auto; /* Center items */
+	overflow: hidden; /* When something doesn't fit there will be no scrollbar */
+}
+#branding p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family: "Bebas Neue", cursive;
+	font-size: 24px;
+	background-color: #83bc10;
+	color: white;
+	padding: 0 8px;
+}
+
+ul {
+	margin: 0; /* Removing default padding and margin from all uls on the website*/
+	padding: 0;
+}
+
+header li {
+	float: left;
+	display: inline; /* display nav items next to each other */
+	padding-left: 80px; /* Padding on left of the nav items */
+}
+
+header a {
+	text-decoration: none;
+}
+
+header #branding {
+	float: left;
+}
+
+header nav {
+	float: right;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+header a {
+	color: #83bc10;
+	font-weight: bold;
+}
+
+#showcase > .container {
+	background-image: linear-gradient(
+			90deg,
+			rgba(8, 61, 0, 0.7),
+			rgba(256, 256, 256, 0)
+		),
+		url("../img/hero-image.jpg");
+	min-height: 600px;
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	display: flex; /* needed to be able to center the div inside it vertically */
+}
+
+.showcase-content {
+	margin: auto 80px; /* centers the showcase content vertically - auto and 80px from the side */
+	color: white;
+}
+
+.showcase-content p {
+	font-size: 20px;
+}
