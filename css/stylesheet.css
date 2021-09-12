@@ -164,13 +164,21 @@ header a {
 }
 
 .veg {
-	height: 260px;
+	max-height: 260px;
 }
 
 .benefits-list {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
+	grid-auto-rows: minmax(125px, auto);
+	grid-gap: 0.5rem;
+}
+
+/* when our browser is 40em or larger */
+@media screen and (min-width: 40em) {
+	.benefits-list {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 20px;
+	}
 }
 
 .ben-one {
