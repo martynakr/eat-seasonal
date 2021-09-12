@@ -116,8 +116,19 @@ header a {
 
 .inSeason {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 20px;
+	grid-auto-rows: minmax(
+		125px,
+		auto
+	); /*tell our grid container the height of new rows, With minmax() we can specify a minimum size and a maximum size, max size is auto so it will take up the whole space available. */
+	grid-gap: 0.5rem;
+}
+
+/* when our browser is 40em or larger */
+@media screen and (min-width: 40em) {
+	.inSeason {
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 20px;
+	}
 }
 
 #currentlyInSeason p {
