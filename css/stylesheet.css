@@ -187,26 +187,65 @@ header a {
 	padding: 30px;
 }
 
+/* Responsive flexbox for the recipes section */
 .rec {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	flex-direction: row; /*stacks the flex items horizontally (from left to right) */
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 40em) {
+	.rec {
+		flex-direction: column;
+	}
 }
 
 .rec-one {
 	background-color: #e8deca;
+	flex: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.rec-cont {
+	padding: 40px 80px;
+}
+
+.black-button {
+	border: 2px solid black;
+	color: black;
+	padding: 15px 30px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.black-button:hover {
+	background-color: #f78118;
+	border: 2px solid #f78118;
+	color: white;
 }
 
 .rec-two {
 	background-color: #e3f0d0;
+	flex: 50%;
+	display: flex;
+	align-items: center;
 }
 .rec-three {
 	background-color: #ebd7cb;
+	flex: 50%;
+	display: flex;
+	align-items: center;
+}
+
+.photo {
+	flex: 50%;
 }
 
 .photo img {
 	max-width: 100%; /*takes 100% oof the div */
-	max-height: 100%;
-	display: block; /* remove extra space below image */
+	display: flex; /* remove extra space below image */
 }
 
 footer {
