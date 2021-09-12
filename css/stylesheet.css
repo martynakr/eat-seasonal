@@ -49,14 +49,21 @@ h4 {
 	margin: auto; /* Center items */
 	overflow: hidden; /* When something doesn't fit there will be no scrollbar */
 }
-#branding p {
+
+#branding {
 	margin-top: 20px;
 	margin-bottom: 20px;
+}
+#branding a {
+	margin-top: 25px;
+	margin-bottom: 25px;
 	font-family: "Bebas Neue", cursive;
 	font-size: 24px;
+	font-weight: 100;
 	background-color: #83bc10;
 	color: white;
 	padding: 0 8px;
+	text-decoration: none;
 }
 
 ul {
@@ -184,7 +191,12 @@ header a {
 .ben-one {
 	background-color: #e1f6e2;
 	text-align: center;
-	padding: 30px;
+	padding: 60px;
+}
+
+.ben-one img {
+	max-height: 180px;
+	margin: 20px;
 }
 
 /* Responsive flexbox for the recipes section */
@@ -251,4 +263,12 @@ header a {
 footer {
 	margin-top: 60px;
 	background-color: #83bc10;
+}
+
+#newsletter p {
+	text-align: center;
+}
+
+#newsletter h3 {
+	margin-bottom: 0;
 }
