@@ -39,7 +39,11 @@ h3 {
 	margin-bottom: 30px;
 	color: #83bc10;
 }
-/* Global */
+
+h4 {
+	font: 24px/1.6 "DM Sans", sans-serif;
+	font-weight: bold;
+}
 .container {
 	width: 90%; /* Using % not px so it's responsive */
 	margin: auto; /* Center items */
@@ -97,10 +101,12 @@ header a {
 	background-repeat: no-repeat; /* Do not repeat the image */
 	background-size: cover; /* Resize the background image to cover the entire container */
 	display: flex; /* needed to be able to center the div inside it vertically */
+	align-items: center;
 }
 
 .showcase-content {
-	margin: auto 80px; /* centers the showcase content vertically - auto and 80px from the side */
+	margin: 0 80px;
+	/* margin: auto 80px; centers the showcase content vertically - auto and 80px from the side */
 	color: white;
 }
 
@@ -109,12 +115,9 @@ header a {
 }
 
 .inSeason {
-	display: flex;
-	justify-content: space-around;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 20px;
-	font: 25px/1.6 "DM Sans", sans-serif;
 }
 
 #currentlyInSeason p {
@@ -144,7 +147,7 @@ header a {
 	padding: 40px;
 }
 .in-season-four {
-	background-color: #cceb9e;
+	background-color: #e3f0d0;
 	text-align: center;
 	padding: 40px;
 }
@@ -154,8 +157,6 @@ header a {
 }
 
 .benefits-list {
-	display: flex;
-	justify-content: space-around;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 20px;
@@ -168,8 +169,6 @@ header a {
 }
 
 .rec {
-	display: flex;
-	justify-content: space-around;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -177,8 +176,21 @@ header a {
 .rec-one {
 	background-color: #e8deca;
 }
+
+.rec-two {
+	background-color: #e3f0d0;
+}
+.rec-three {
+	background-color: #ebd7cb;
+}
+
 .photo img {
-	max-width: 100%;
+	max-width: 100%; /*takes 100% oof the div */
 	max-height: 100%;
 	display: block; /* remove extra space below image */
+}
+
+footer {
+	margin-top: 60px;
+	background-color: #83bc10;
 }
